@@ -1,5 +1,5 @@
 
-export const url = "http://localhost:5000/api";     //Το baseUrl για αποστολή HTTP requests στον server
+export const url = "https://my-book-store-softweb-api.vercel.app/api";     //Το baseUrl για αποστολή HTTP requests στον server
 
 export const setHeaders = () => {
   const headers = {
