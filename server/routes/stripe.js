@@ -36,8 +36,8 @@ router.post('/create-checkout-session', async (req, res) => {
     line_items,
     mode: 'payment',
     customer: customer.id,
-    success_url:`${process.env.CLIENT_URL}/checkout-success`,
-    cancel_url:`${process.env.CLIENT_URL}/cart`,
+    success_url:`https://my-book-store-softweb-cl.vercel.app/checkout-success`,
+    cancel_url:`https://my-book-store-softweb-cl.vercel.app/cart`,
   });
   res.send({url: session.url});
 });
